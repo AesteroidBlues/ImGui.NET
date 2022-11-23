@@ -55,9 +55,19 @@ namespace CodeGenerator
             { "ImPlotFormatter", "IntPtr" },
             { "ImPlotGetter", "IntPtr" },
             { "ImPlotTransform", "IntPtr" },
-            { "ImGuiKeyChord", "ImGuiKey" },
+            // internals
+            { "char[5]", "byte*"},
+            { "ImGuiDir*", "IntPtr" },
+            //{ "ImGuiStoragePair", "IntPtr" },
+            { "ImGuiDockRequest", "IntPtr" },
+            { "ImGuiDockNodeSettings", "IntPtr" },
+            { "ImGuiTableColumnIdx", "sbyte" },
+            { "ImGuiTableDrawChannelIdx", "byte"},
+            { "ImGuiContextHookCallback", "IntPtr" },
+            { "ImGuiErrorLogCallback", "IntPtr" },
+            //{ "ImGuiSizeCallback", "IntPtr"}
         };
-        
+
         public static readonly List<string> WellKnownEnums = new List<string>()
         {
             "ImGuiMouseButton"
@@ -84,6 +94,7 @@ namespace CodeGenerator
             "ImVec2",
             "ImVec4",
             "ImGuiStoragePair",
+            "ImGuiStyleMod",
         };
 
         public static readonly Dictionary<string, string> WellKnownDefaultValues = new Dictionary<string, string>()
@@ -129,7 +140,7 @@ namespace CodeGenerator
             { "ImPlotRect()", "new ImPlotRect()" },
             { "ImPlotCond_Once", "ImPlotCond.Once" },
             { "ImPlotRange()", "new ImPlotRange()" },
-            
+
         };
 
         public static readonly Dictionary<string, string> IdentifierReplacements = new Dictionary<string, string>()
