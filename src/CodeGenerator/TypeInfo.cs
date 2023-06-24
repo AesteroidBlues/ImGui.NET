@@ -55,6 +55,7 @@ namespace CodeGenerator
             { "ImPlotFormatter", "IntPtr" },
             { "ImPlotGetter", "IntPtr" },
             { "ImPlotTransform", "IntPtr" },
+            { "ImGuiKeyChord", "ImGuiKey" },
             // internals
             { "char[5]", "byte*"},
             { "ImGuiDir*", "IntPtr" },
