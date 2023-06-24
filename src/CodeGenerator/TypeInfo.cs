@@ -56,7 +56,8 @@ namespace CodeGenerator
             { "ImPlotGetter", "IntPtr" },
             { "ImPlotTransform", "IntPtr" },
             { "ImGuiKeyChord", "ImGuiKey" },
-            // internals
+
+            // ImGui Internal
             { "char[5]", "byte*"},
             { "ImGuiDir*", "IntPtr" },
             //{ "ImGuiStoragePair", "IntPtr" },
@@ -67,6 +68,9 @@ namespace CodeGenerator
             { "ImGuiContextHookCallback", "IntPtr" },
             { "ImGuiErrorLogCallback", "IntPtr" },
             //{ "ImGuiSizeCallback", "IntPtr"}
+
+            // ImNodes types
+            { "ImNodesMiniMapNodeHoveringCallbackUserData", "void*" }
         };
 
         public static readonly List<string> WellKnownEnums = new List<string>()

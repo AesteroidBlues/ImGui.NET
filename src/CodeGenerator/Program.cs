@@ -907,6 +907,10 @@ namespace CodeGenerator
                 {
                     correctedDefault = $"({tr.Type})({defaultVal})";
                 }
+                else if (defaultVal.Contains("_"))
+                {
+                    correctedDefault = String.Join('.', defaultVal.Split('_'));
+                }
                 else
                 {
                     correctedDefault = $"({tr.Type}){defaultVal}";

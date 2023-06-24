@@ -420,7 +420,7 @@ namespace CodeGenerator
             
             TypeVariants = typeVariants;
 
-            IsEnum = enums.Any(t => t.Names.Contains(type) || t.FriendlyNames.Contains(type) || TypeInfo.WellKnownEnums.Contains(type));
+            IsEnum = enums.Any(t => t.Names.Contains(Type) || t.FriendlyNames.Contains(Type) || TypeInfo.WellKnownEnums.Contains(Type));
         }
         
         private int ParseSizeString(string sizePart, EnumDefinition[] enums)
